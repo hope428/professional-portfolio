@@ -1,53 +1,100 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+/* variables */
+
+:root {
+  --main-green-color: rgb(64, 122, 89);
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: var(--main-green-color);
+  background-color: rgb(255, 255, 255);
+}
+
+/* Header and navbar */
 
 .header {
-    border: 1px solid black;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navigation ul{
-    display: flex;
-    list-style-type: none;
-}
-
-.navigation ul a {
-    text-decoration: none;
-    padding: 0 16px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-green-color);
 }
 
 .header h1 {
-    font-size: 24px;
+  font-size: 24px;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  letter-spacing: 1.2px;
+  padding-left: 5px;
 }
 
+.navigation ul,
+.contact ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navigation ul a,
+.contact ul a {
+  text-decoration: none;
+  padding: 0 16px;
+  margin: 0 5px;
+  color: white;
+  text-shadow: 1px 2px 5px black;
+  border-bottom: 3px solid white;
+}
+
+/* Section styles */
+
 .section {
-    margin: 0 auto;
-    width: 760px;
-    display: flex;
+  margin: 0 auto;
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .section h1 {
-    margin-right: 20px;
-    padding-right: 5px;
-    border-right: 3px solid black;
+  margin-right: 20px;
+  padding-right: 5px;
+  border-right: 3px solid var(--main-green-color);
+  min-width: 15%;
+  text-align: right;
 }
 
-.top-section {
-    display: flex;
-    background-image: url('../images/leaves.png');
-    font-size: 32px;
+/* intro section */
+
+.intro-section {
+  display: flex;
+  background-image: url("../images/leaves.png");
+  font-size: 32px;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.intro-section img {
+  height: 200px;
+  border-radius: 12px;
+  box-shadow: 3px 3px 3px black;
+  margin: 5px;
+}
+
+.intro-section p {
+  align-self: flex-end;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+}
+
+/* contact */
+
+.contact {
+    align-items: center;
     justify-content: space-between;
 }
 
-.top-section img {
-    height: 250px;
-    border-radius: 12px;
-    box-shadow: 3px 3px 3px black;
-    margin: 5px;
+.contact ul a {
+  color: var(--main-green-color);
+  text-shadow: none;
 }
