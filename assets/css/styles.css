@@ -126,6 +126,8 @@ body {
 
 .overlay {
   background-color: rgba(64, 122, 89, 0.3);
+  position: absolute;
+  top: 0;
   height: 100%;
   width: 100%;
   transition: 0.3s;
@@ -135,12 +137,14 @@ body {
   background-color: transparent;
 }
 
+.project img {
+  width: 100%;
+  height: 100%;
+}
+
 #main-project {
   grid-column-start: 1;
   grid-column-end: 3;
-  background-image: url("https://i.picsum.photos/id/122/4147/2756.jpg?hmac=-B_1uAvYufznhjeA9xSSAJjqt07XrVzDWCf5VDNX0pQ");
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #project-1,
@@ -155,30 +159,11 @@ body {
   grid-column-end: 3;
 }
 
-#project-1 {
-  background-image: url("https://i.picsum.photos/id/60/1920/1200.jpg?hmac=fAMNjl4E_sG_WNUjdU39Kald5QAHQMh-_-TsIbbeDNI");
-  background-size: cover;
-  background-repeat: no-repeat;
+#project-1, #project-2, #project-3, #project-4 {
+  max-height: 200px;
 }
 
-#project-2 {
-  background-image: url("https://i.picsum.photos/id/48/5000/3333.jpg?hmac=y3_1VDNbhii0vM_FN6wxMlvK27vFefflbUSH06z98so");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#project-3 {
-  background-image: url("https://i.picsum.photos/id/659/2731/1536.jpg?hmac=jwFueQ8WaCS2sR6LVKFGQ3-emm0_HqHEOhQDt8AzHyQ");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#project-4 {
-  background-image: url("https://i.picsum.photos/id/670/367/267.jpg?hmac=jWpBe0paygYlzJpLLA5EAi0YNLATvVECz-dULgw7nNo");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-div[data-projectTitle]::after {
+div[data-projectTitle]::before {
   content: attr(data-projectTitle);
   position: absolute;
   bottom: 1rem;
