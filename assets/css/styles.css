@@ -18,6 +18,10 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+a {
+  cursor: pointer;
+}
+
 /* Header and navbar */
 
 .header {
@@ -147,19 +151,19 @@ body {
   grid-column-end: 3;
 }
 
-#project-1,
-#project-3 {
+#project-2,
+#project-4 {
   grid-column-start: 1;
   grid-column-end: 2;
 }
 
-#project-2,
-#project-4 {
+#project-3,
+#project-5 {
   grid-column-start: 2;
   grid-column-end: 3;
 }
 
-#project-1, #project-2, #project-3, #project-4 {
+#project-5, #project-2, #project-3, #project-4 {
   max-height: 200px;
 }
 
