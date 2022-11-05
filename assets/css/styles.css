@@ -4,6 +4,10 @@
   --main-green-color: rgb(64, 122, 89);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -24,10 +28,11 @@ body {
 
 .header h1 {
   font-size: 24px;
-  color: white;
-  text-shadow: 1px 1px 3px black;
+  color: var(--main-green-color);
+  text-shadow: 1px 1px 3px white;
   letter-spacing: 1.2px;
-  padding-left: 5px;
+  padding: .25rem .25rem .25rem 2rem;
+  background-color: rgb(255, 255, 242);
 }
 
 .navigation ul{
@@ -47,7 +52,7 @@ body {
 /* Section styles */
 
 .section {
-  margin: 0 auto;
+  margin: 1rem auto;
   width: 760px;
   display: flex;
 }
@@ -91,6 +96,38 @@ body {
 .intro-section .quote .author {
     font-size: 20px;
 } 
+
+/* projects */
+
+.projects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.project {
+  height: 200px;
+  width: 100%;
+  border: 3px solid var(--main-green-color);
+}
+
+#main-project {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#project-1, #project-3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+#project-2, #project-4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
 
 /* contact */
 
