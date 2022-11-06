@@ -80,6 +80,7 @@ a {
   background-image: url("../images/leaves.png");
   font-size: 32px;
   justify-content: space-between;
+  align-items: flex-end;
   padding: 0 10px;
 }
 
@@ -95,10 +96,6 @@ a {
   font-weight: bold;
   font-style: italic;
   padding: 0;
-}
-
-.intro-section .quote {
-  align-self: flex-end;
 }
 
 .intro-section .quote .author {
@@ -163,10 +160,7 @@ a {
   grid-column-end: 3;
 }
 
-#project-5,
-#project-2,
-#project-3,
-#project-4 {
+.small-project {
   max-height: 200px;
 }
 
@@ -180,10 +174,6 @@ div[data-projectTitle]::before {
 }
 
 /* contact */
-
-.contact {
-  align-items: center;
-}
 
 .contact ul {
   text-align: center;
@@ -219,7 +209,7 @@ div[data-projectTitle]::before {
     padding: 1rem 0;
   }
 
-  /* main section */
+  /* main section (small screen)*/
   .section {
     flex-direction: column;
     max-width: 90%;
@@ -232,7 +222,7 @@ div[data-projectTitle]::before {
     margin: 1rem 0;
   }
 
-  /* gallery */
+  /* gallery (small screen)*/
 
   .projects {
     grid-template-rows: 200px;
@@ -248,17 +238,13 @@ div[data-projectTitle]::before {
     grid-column-end: 4;
   }
 
-  /* contact */ 
-
-  .contact {
-    width: 100%;
-  }
+  /* contact (small screen)*/
 
   .contact ul {
     padding-left: 0;
   }
-  .contact ul li{
+  .contact ul li {
     display: block;
-    margin: 1rem
+    margin: 1rem;
   }
 }
