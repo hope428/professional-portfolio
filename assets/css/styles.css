@@ -148,13 +148,22 @@ a {
 
 }
 
-div[data-projectTitle]::before {
-  content: attr(data-projectTitle);
+.project-title {
   position: absolute;
   bottom: 1rem;
   background-color: var(--main-green-color);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
+}
+
+.project-title h2{
+  font-size: 1rem;
+  margin: 0.25rem;
+  margin-left: 0;
+}
+
+.project-title p {
+  font-size: .75rem;
 }
 
 /* contact */
